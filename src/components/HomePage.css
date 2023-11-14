@@ -1,0 +1,44 @@
+/* Estilos básicos, puedes personalizar según tu diseño */
+.contenedor {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.span {
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-logo {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.busqueda-principal {
+    background-color: black;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+button {
+    margin-bottom: 40px;
+    /* Ajusta según sea necesario */
+}
+
+.input {
+    border-color: gray;
+}
