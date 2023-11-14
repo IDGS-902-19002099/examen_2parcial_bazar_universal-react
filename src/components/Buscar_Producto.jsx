@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -48,7 +48,7 @@ const Buscar_Producto = () => {
   return (
     <>
       <div className="contenedor">
-        <div className="search-container">
+        <div className="search-container2">
           <div className="input-group">
             <img
               className="logo"
@@ -57,7 +57,7 @@ const Buscar_Producto = () => {
             />
             <span
               type="button"
-              className="input-group-text span"
+              className="input-group-text span botonBuscar"
               onClick={handleSearch}
             >
               🔎
@@ -74,19 +74,19 @@ const Buscar_Producto = () => {
         </div>
 
         <hr />
-        <div className="content-container">
+        <div className="resultados">
           {products && products.length > 0 ? (
             products.map((product) => (
-              <div key={product.id} className="card">
-                <div className="row contenedor-card">
-                  <div className="div1">
+              <div key={product.id} className="card1">
+                <div className="contenedor-card">
+                  <div className="divImagen">
                     <img
                       src={product.images[0]}
                       alt=""
-                      className="card-image"
+                      className="cardImagen"
                     />
                   </div>
-                  <div className="div2">
+                  <div className="divDetalles">
                     <h3>{product.title}</h3>
                     <p>{product.description}</p>
                     <p>${product.price}</p>

@@ -50,11 +50,7 @@ const HomePage = () => {
         Buscar
       </button>
       <br />
-      <div>
-        <Link to="/buscar">buscar</Link>
-        <br />
-        <Link to="/producto">detalle producto</Link>
-      </div>
+      <div></div>
     </div>
   );
 };

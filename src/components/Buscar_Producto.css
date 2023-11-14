@@ -4,88 +4,88 @@
     color: white;
 }
 
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.resultados {
+    overflow-x: auto;
+    height: 500px;
+    width: 90%;
 }
+
 
 .logo {
     width: 30px;
     height: 30px;
+    margin-right: 10px;
 }
 
-.search-container {
-    position: fixed;
-    top: 0;
-    left: 0;
+.search-container2 {
     width: 100%;
     background-color: rgb(234, 231, 231);
-    padding: 10px;
-    z-index: 1000;
 }
 
 .input {
     border-color: gray;
 }
 
-hr {
+.linea {
     border: 1px solid gray;
-    width: 1000px;
+    max-width: 60%;
     margin-left: 10px;
     margin-right: 10px;
     /* Ajusta el valor según tus preferencias */
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    overflow-y: auto;
     /* Agrega un desplazamiento vertical si es necesario */
 }
 
 
-.card {
-    width: 100%;
-    padding: 10px;
-    background-color: white;
-    border-color: gray;
+.card1 {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: rgb(216, 216, 216);
+    border-color: rgb(0, 0, 0);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    /* Ajusta el valor según tus preferencias */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
-.card-image {
-    width: 300px;
-    height: 300px;
+.cardImagen {
+    width: 100%;
+    min-width: 150px;
+    height: auto;
     border-radius: 10%;
     border-style: groove;
     border-color: gray;
 }
 
-.contenedor-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    justify-content: flex-end;
+.contenedor-card {}
+
+.divDetalles {
+    padding: 1px;
+    width: 40%;
 }
 
-.div1,
-.div2 {
+.divImagen {
     padding: 1px;
+    width: 60%;
 }
 
 .contenedor {
     font-family: Arial, sans-serif;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+}
 
-    z-index: 1000;
+
+.botonBuscar {
+    margin-left: 20px;
+}
+
+.input-group {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -43,15 +43,31 @@ const Detalle_Producto = () => {
   return (
     <>
       <div className="contenedor">
-        <div className="search-container">{/* ... (existing code) */}</div>
+        <div className="search-container">
+          <div className="input-group">
+            <img
+              className="logo"
+              src="https://static.vecteezy.com/system/resources/previews/012/494/061/original/shopping-bag-icon-with-transparent-background-png.png"
+              alt=""
+            />
+
+            <span className="input-group-text span botonBuscar">🔎</span>
+            <input
+              className="form-control input"
+              type="text"
+              id="searchInput"
+              placeholder="Buscar productos..."
+            />
+          </div>
+        </div>
         <br />
         <br />
         <br />
         {product ? (
           <div className="div2">
-            <div className="row contenedor-img">
+            <div className=" contenedor-img">
               {product.images.map((image, index) => (
-                <div key={index} className={`div${index + 1}`}>
+                <div key={index} className={`div1`}>
                   <img
                     src={image}
                     alt={`Product Image ${index + 1}`}
